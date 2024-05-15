@@ -1,0 +1,61 @@
+/* reset css */
+* {
+    margin: 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#main {
+
+}
+
+#header {
+    background-color: red;
+    z-index: 1 ;
+    position: fixed;
+    top : 0;
+    left : 0;
+    right : 0;  
+    display: flex;
+    height: 74px;
+    justify-content: center; /* căn giữa theo chiều ngang */
+    align-items: center; /* căn giữa theo chiều dọc */
+    font-size: 13px;
+}
+
+.header-right, .header-left{
+    display: flex;
+}
+.header-right div {
+    margin-left: 12px;
+}
+.header-left, .header-right{
+    align-self: center;
+    height: 42px;
+    align-items: center;
+}
+
+.header-left div, .header-right div {
+    height: 36px;
+}
+.nav-menu a, .header-right div a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-menu, .nav-text, .nav-search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header a:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+#header a{
+    
+}
